@@ -53,7 +53,6 @@ function rangoli(N) {
     for (let i = 0; i < rows.length; i++) {
         rows[i] = "-";
     }
-    // rows = rows.join('');
     // now rows is a string of '-' (((N*2) - 1) * 2) - 1 times
     // from now on, we need to keep replacing items at specific indexes with specific letters as we loop
     // through (N*2-1)
@@ -86,4 +85,5 @@ function rangoli(N) {
     }
 }
 
-rangoli(11);
+// test input:
+// rangoli(11);

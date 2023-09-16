@@ -49,5 +49,41 @@ j-i-h-g-f-e-d-c-b-a-b-c-d-e-f-g-h-i-j
 
 function rangoli(N) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
-    
+    let rows = new Array((((N*2) - 1) * 2) - 1);
+    for (let i = 0; i < rows.length; i++) {
+        rows[i] = "-";
+    }
+    // rows = rows.join('');
+    // now rows is a string of '-' (((N*2) - 1) * 2) - 1 times
+    // from now on, we need to keep replacing items at specific indexes with specific letters as we loop
+    // through (N*2-1)
+    let left, right = 0;
+    let middle = (rows.length - 1)/2;
+    let letter = alphabet[N - 1];
+    for (let i = 0; i < (N*2) - 1; i++) {
+        // top part of rangoli
+        if (i < N) {
+            if (i === 0) {
+                rows[middle] = letter;
+                console.log(rows.join(""));
+                left = middle - 2;
+                right = middle + 2;
+            }
+            else {
+                rows[left] = alphabet[N-1-i];
+                rows[right] = alphabet[N-1-i];
+                console.log(rows.join(''));
+                left -= 2;
+                right += 2;
+            }
+        }
+        else {
+            left += 2; right -= 2;
+            rows[left] = "-";
+            rows[right] = '-';
+            console.log(rows.join(''));
+        }
+    }
 }
+
+rangoli(11);

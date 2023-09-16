@@ -28,5 +28,5 @@ function score_words(s) {
     return count;
 }
 
-
-console.log(score_words("programming is awesome".split(' ')));
+// test input:
+// console.log(score_words("programming is awesome".split(' ')));

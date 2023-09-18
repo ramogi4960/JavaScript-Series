@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>A webpage within a webpage</h3>
+
+    <p id="parental"></p>
+    <script>
+        let age = window.prompt("Enter your age");
+        document.getElementById("parental").innerHTML = age >= 18? "Allowed to drink": "Too young to drink";
+    </script>
+</body>
+</html>

@@ -12,4 +12,6 @@ function fib(n) {
     return fibList;
 }
 
+export default fib;
+
 // console.log(fib(5).map(x => {return x**3}));

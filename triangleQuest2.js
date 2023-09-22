@@ -23,4 +23,4 @@ function palindrome(n) {
     }
 }
 
-palindrome(10);
+// palindrome(10);

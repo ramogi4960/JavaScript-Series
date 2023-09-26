@@ -1,0 +1,42 @@
+.main {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    display: inline-block;
+    vertical-align: 20px;
+}
+
+.bigger_image {
+    display: block;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.texts {
+    display: inline-block;
+    padding: 10px;
+}
+
+.heading {
+    font-family: Arial;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.inner_div {
+    display: inline-block;
+}
+
+p {
+    width: 350px;
+}
+

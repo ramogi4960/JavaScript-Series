@@ -1,0 +1,27 @@
+img {
+    height: 300px;
+    width: 500px;
+    border-radius: 50px;
+}
+div {
+    display: inline-block;
+    margin: 30px;
+    vertical-align: top;
+}
+.heading {
+    font-size: 30px;
+    font-family: 'Lucida Sans';
+}
+.pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    display: inline-block;
+    padding-bottom: 2px;
+    vertical-align: top;
+    object-fit: fill;
+}
+.inner {
+    display: inline-block;
+    font-family: 'Mooli', sans-serif;
+}

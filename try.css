@@ -1,0 +1,46 @@
+input {
+    display: block;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: "Mooli";
+    margin: 20px;
+    width: 300px;
+    font-size: 20px;
+}
+
+button {
+    display: block;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(95, 224, 224);
+    color: white;
+    font-family: "Mooli";
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#login_form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+#login_form :hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+p {
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+p :hover {
+    box-shadow: none;
+    border: none;
+}

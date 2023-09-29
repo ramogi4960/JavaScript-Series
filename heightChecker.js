@@ -4,15 +4,11 @@
  */
 var heightChecker = function(heights) {
     let count = 0;
-    let expected = heights.sort((x ,y) => x - y);
-    console.log(expected);
-    console.log(heights);
+    let expected = [];
+    heights.forEach((x) => expected.push(x));
+    heights.sort((x ,y) => x - y);
     for (let x = 0; x < heights.length; x += 1) {
-        console.log(heights[x]);
-        console.log(expected[x]);
         if (heights[x] !== expected[x]) {count += 1}
     }
     return count;
 }
-
-console.log(heightChecker([1,1,4,2,1,3]));
